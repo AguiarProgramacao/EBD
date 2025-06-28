@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=XN1rymLa"></script>
+
+  <title>Prova EBD - Livro de Daniel</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="start-screen">
+      <img src="bg.jpg" alt="IMENC">
+      <h2>Prova Bíblica - Livro de Daniel (Cap. 1 ao 6)</h2>
+      <label>Digite seu nome:</label>
+      <input type="text" id="nome" />
+      <br /><br />
+      <button onclick="mostrarAviso()">Começar</button>
+    </div>
+
+    <div id="aviso" class="hidden">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <p>Ao iniciar o questionário, você entrará em modo de foco (tela cheia). Se sair da tela, a prova será cancelada.
+      </p>
+      <button onclick="ativarModoFoco(); iniciarQuestionario();">Iniciar Prova</button>
+    </div>
+
+    <div id="quiz" class="hidden">
+      <div id="timer">Tempo restante: 60:00</div>
+      <div id="pergunta-container"></div>
+      <button onclick="responder()">Responder</button>
+      <button onclick="lerPergunta()">🔊 Ouvir</button>
+    </div>
+
+    <div id="resultado" class="hidden"></div>
+  </div>
+
+  <div id="modal-alerta" class="hidden">
+    <div class="bg-white rounded-lg shadow-lg p-6 max-w-md text-center">
+      <p id="modal-alerta-texto" class="mb-4 text-lg font-medium text-gray-800">Mensagem aqui</p>
+      <button onclick="fecharModalAlerta()"
+        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">OK</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
