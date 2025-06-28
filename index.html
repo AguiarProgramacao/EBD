@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=XN1rymLa"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
   <title>Prova EBD - Livro de Daniel</title>
 </head>
@@ -39,7 +40,9 @@
       <button onclick="lerPergunta()">🔊 Ouvir</button>
     </div>
 
-    <div id="resultado" class="hidden"></div>
+    <div id="resultado" class="hidden">
+      <div id="link-pdf" class="hidden" style="margin-top: 20px;"></div>
+    </div>
   </div>
 
   <div id="modal-alerta" class="hidden">

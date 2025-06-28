@@ -381,7 +381,15 @@ function finalizar() {
   else if (porcentagem < 70) mensagem = "Foi bom, mas pode melhorar";
   else mensagem = "Excelente, sinal que tem estudado";
 
-  document.getElementById("resultado").innerHTML = `<h3>Você acertou ${acertos} de ${perguntas.length}</h3><p>${mensagem}</p>`;
+  const resultadoDiv = document.getElementById("resultado");
+  resultadoDiv.classList.remove("hidden");
+  resultadoDiv.innerHTML = "";
+  resultadoDiv.innerHTML = `
+  <h3>Você acertou ${acertos} de ${perguntas.length}</h3>
+  <p>${mensagem}</p>
+  <div id="link-pdf" class="hidden" style="margin-top: 20px;"></div>
+`;
+
   document.getElementById("resultado").classList.remove("hidden");
 
   tempoFinal = Date.now();
@@ -394,54 +402,33 @@ function finalizar() {
 }
 
 function enviarParaPlanilha(tempoGastoFormatado) {
-  const dados = {
-    Nome: nomeUsuario,
-    Acertos: acertos,
-    TempoGasto: tempoGastoFormatado
-  };
+  gerarPDF(nomeUsuario, respostasUsuario, (pdfURL) => {
+    const dados = {
+      Nome: nomeUsuario,
+      Acertos: acertos,
+      TempoGasto: tempoGastoFormatado,
+      LinkPDF: pdfURL
+    };
 
-  respostasUsuario.forEach((resp, i) => {
-    dados[`Q${i + 1}: ${resp.pergunta}`] = `Sua: ${resp.respostaUsuario} | Correta: ${resp.respostaCorreta}`;
-  });
-
-  fetch("https://api.sheetmonkey.io/form/3m1vGSyKv9idvhSJwAdzVp", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(dados)
-  });
-}
-
-document.addEventListener("fullscreenchange", () => {
-  // Verifica se o usuário saiu do modo tela cheia
-  if (!document.fullscreenElement) {
-    // Se a prova ainda estiver ativa, cancela
-    if (!document.getElementById("resultado").classList.contains("hidden")) return;
-
-    tempoFinal = Date.now();
-    const tempoGastoSegundos = Math.floor((tempoFinal - tempoInicial) / 1000);
-    const minutos = Math.floor(tempoGastoSegundos / 60);
-    const segundos = tempoGastoSegundos % 60;
-    const tempoGastoFormatado = `${minutos}m ${segundos}s`;
-
-    // Envia com status cancelado
     fetch("https://api.sheetmonkey.io/form/3m1vGSyKv9idvhSJwAdzVp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({
-        Nome: nomeUsuario,
-        Acertos: "CANCELADA",
-        TempoGasto: tempoGastoFormatado
-      })
+      body: JSON.stringify(dados)
     });
 
-    alert("Você saiu do modo foco. A prova foi cancelada.");
-    location.reload();
-  }
-});
+    // Mostrar o link do PDF na tela
+    const linkDiv = document.getElementById("link-pdf");
+    linkDiv.innerHTML = `
+      <p><strong>Download do PDF com suas respostas:</strong></p>
+      <a href="${pdfURL}" target="_blank" style="color: blue; text-decoration: underline;">
+        Clique aqui para baixar o PDF
+      </a>
+    `;
+    linkDiv.classList.remove("hidden");
+  });
+}
 
 function mostrarModalAlerta(mensagem) {
   document.getElementById("modal-alerta-texto").innerText = mensagem;
@@ -450,4 +437,29 @@ function mostrarModalAlerta(mensagem) {
 
 function fecharModalAlerta() {
   document.getElementById("modal-alerta").classList.add("hidden");
+}
+
+function gerarPDF(usuario, respostas, callback) {
+  const div = document.createElement("div");
+  div.innerHTML = `
+    <h2>Respostas de ${usuario}</h2>
+    ${respostas.map((r, i) => `
+      <p><strong>${i + 1}. ${r.pergunta}</strong><br>
+      Resposta do usuário: ${r.respostaUsuario}<br>
+      Resposta correta: ${r.respostaCorreta}</p>
+    `).join("")}
+  `;
+
+  const opt = {
+    margin: 0.5,
+    filename: `${usuario}-respostas.pdf`,
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+  };
+
+  html2pdf().from(div).set(opt).outputPdf('blob').then(blob => {
+    const url = URL.createObjectURL(blob);
+    callback(url);
+  });
 }
