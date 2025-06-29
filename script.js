@@ -16,7 +16,7 @@ const perguntas = [
   },
   {
     pergunta: "Quem deu novos nomes a Daniel e seus amigos?",
-    opcoes: ["O rei Davi", "O chefe dos eunucos", "Nabucodonosor", "Beltesazar"],
+    opcoes: ["O rei Davi", "O chefe dos oficiais", "Nabucodonosor", "Beltesazar"],
     correta: 1
   },
   {
@@ -56,7 +56,7 @@ const perguntas = [
   },
   {
     pergunta: "Quem foi lançado na fornalha de fogo?",
-    opcoes: ["Daniel", "Sadraque, Mesaque e Abede-Nego", "Ezequiel", "Belsazar"],
+    opcoes: ["Daniel", "Sadraque, Mesaque e Abede-Nego", "Ezequiel, Samuel e Obede-Edon", "Belsazar"],
     correta: 1
   },
   {
@@ -71,7 +71,7 @@ const perguntas = [
   },
   {
     pergunta: "O que Nabucodonosor declarou após o milagre da fornalha?",
-    opcoes: ["Que mataria os judeus", "Que serviria ao Deus de Israel", "Que era um deus", "Que queimaria Daniel"],
+    opcoes: ["Que mataria os judeus", "Que ninguém falasse mal do Deus vivo", "Que era um deus", "Que queimaria Daniel"],
     correta: 1
   },
   {
@@ -96,7 +96,7 @@ const perguntas = [
   },
   {
     pergunta: "Quem era Belsazar?",
-    opcoes: ["Filho de Daniel", "Rei da Pérsia", "Filho de Nabucodonosor", "Rei babilônico, sucessor de Nabucodonosor"],
+    opcoes: ["Filho de Daniel", "Rei da Pérsia", "Amigo de Daniel", "Sucessor de Nabucodonosor"],
     correta: 3
   },
   {
@@ -106,7 +106,7 @@ const perguntas = [
   },
   {
     pergunta: "O que apareceu na parede durante o banquete?",
-    opcoes: ["Uma espada flamejante", "Fumaça", "A mão que escreveu uma mensagem", "Um anjo"],
+    opcoes: ["Uma espada flamejante", "Fumaça", "dedos de uma mão que escreveu uma mensagem", "Um anjo"],
     correta: 2
   },
   {
@@ -121,7 +121,7 @@ const perguntas = [
   },
   {
     pergunta: "O que significava 'TEQUEL'?",
-    opcoes: ["Pesado na balança e achado em falta", "Dividido", "Reinado encerrado", "Nação restaurada"],
+    opcoes: ["Pesado na balança e achado em falta", "Dividido o teu reino", "Reinado encerrado", "Nação restaurada"],
     correta: 0
   },
   {
@@ -155,105 +155,105 @@ const perguntas = [
     correta: 2
   },
   {
-    pergunta: "Como eram chamados os amigos de Daniel antes de receberem nomes babilônicos?",
-    opcoes: ["Hananias, Misael e Azarias", "Sadraque, Mesaque e Abede-Nego", "Eliezer, Natanael e Tobias", "Abel, Simeão e Levi"],
-    correta: 0
-  },
-  {
-    pergunta: "Qual foi a reação de Nabucodonosor ao ver quatro homens na fornalha?",
-    opcoes: ["Ficou furioso", "Adorou a imagem", "Assustou-se e levantou-se depressa", "Chorou de alegria"],
-    correta: 2
-  },
-  {
-    pergunta: "Quem sugeriu que Daniel interpretasse a escrita na parede?",
-    opcoes: ["O próprio Belsazar", "O rei Dario", "A rainha", "Um soldado"],
-    correta: 2
-  },
-  {
-    pergunta: "Daniel interpretou que o reino de Belsazar seria dado a quem?",
-    opcoes: ["Os judeus", "Os egípcios", "Os persas e medos", "Os gregos"],
-    correta: 2
-  },
-  {
-    pergunta: "Quantas vezes ao dia Daniel orava?",
-    opcoes: ["1", "2", "3", "4"],
-    correta: 2
-  },
-  {
-    pergunta: "Em qual direção Daniel orava?",
-    opcoes: ["Para a Babilônia", "Para o templo em Jerusalém", "Para o palácio real", "Para o norte"],
-    correta: 1
-  },
-  {
-    pergunta: "Quem tramou contra Daniel no capítulo 6?",
-    opcoes: ["Os caldeus", "Outros presidentes e sátrapas", "Os hebreus", "Os magos"],
-    correta: 1
-  },
-  {
-    pergunta: "Qual rei foi enganado para assinar o decreto contra orações?",
-    opcoes: ["Nabucodonosor", "Dario", "Ciro", "Belsazar"],
-    correta: 1
-  },
-  {
-    pergunta: "O que o rei Dario fez logo ao amanhecer após Daniel ser jogado na cova?",
-    opcoes: ["Mandou jogar os acusadores", "Foi à cova e chamou por Daniel", "Fugiu", "Desistiu do trono"],
-    correta: 1
-  },
-  {
-    pergunta: "O que Daniel disse ao rei de dentro da cova?",
-    opcoes: ["\"Estou ferido\".", "\"Estou em paz\".", "\"Meu Deus enviou um anjo e fechou a boca dos leões\".", "\"Foi um erro\"."],
-    correta: 2
-  },
-  {
-    pergunta: "O que aconteceu com os acusadores de Daniel?",
-    opcoes: ["Foram presos", "Foram exilados", "Foram lançados na cova e mortos", "Nada"],
-    correta: 2
-  },
-  {
-    pergunta: "Que atitude o rei Dario teve após o livramento de Daniel?",
-    opcoes: ["Mandou prender os judeus", "Publicou um decreto exaltando o Deus de Daniel", "Repreendeu Daniel", "Mandou reconstruir Jerusalém"],
-    correta: 1
-  },
-  {
-    pergunta: "O que foi observado em Daniel que causou inveja nos outros líderes?",
-    opcoes: ["Sua beleza", "Seu espírito excelente", "Sua fortuna", "Seus sonhos"],
-    correta: 1
-  },
-  {
-    pergunta: "Quantas vezes Daniel foi promovido entre os capítulos 1 e 6?",
-    opcoes: ["1", "2", "3", "4"],
-    correta: 2
-  },
-  {
-    pergunta: "Qual era a punição prevista no decreto que proibia orar a qualquer deus ou homem?",
-    opcoes: ["Prisão", "Morte por fogo", "Ser lançado na cova dos leões", "Exílio"],
-    correta: 2
-  },
-  {
-    pergunta: "O que a expressão 'MENE' significa na interpretação de Daniel?",
-    opcoes: ["Dividido", "Pesado", "Contado", "Julgado"],
-    correta: 2
-  },
-  {
-    pergunta: "Quem reconheceu que Deus é quem revela mistérios?",
-    opcoes: ["Daniel", "Nabucodonosor", "Dario", "Belsazar"],
-    correta: 1
-  },
-  {
-    pergunta: "Daniel atribuiu seus dons a si mesmo?",
-    opcoes: ["Sim, ele era muito sábio", "Não, ele sempre deu crédito a Deus", "Sim, no início", "Nunca comentou"],
-    correta: 1
-  },
-  {
-    pergunta: "Qual atitude o rei esperava dos sábios quando teve o sonho da estátua?",
-    opcoes: ["Que dessem conselhos", "Que acalmassem o povo", "Que revelassem o sonho e sua interpretação", "Que dessem presentes"],
-    correta: 2
-  },
-  {
-    pergunta: "O que Daniel pediu a seus amigos após saber do sonho do rei?",
-    opcoes: ["Que fugissem", "Que jejuassem", "Que orassem a Deus", "Que se escondessem"],
-    correta: 2
-  }
+  pergunta: "Como eram chamados os amigos de Daniel antes de receberem nomes babilônicos?",
+  opcoes: ["Hananias, Misael e Azarias", "Sadraque, Mesaque e Abede-Nego", "Eliezer, Natanael e Tobias", "Abel, Simeão e Levi"],
+  correta: 0
+},
+{
+  pergunta: "Qual foi a reação de Nabucodonosor ao ver quatro homens na fornalha?",
+  opcoes: ["Ficou furioso", "Adorou a imagem", "Assustou-se e levantou-se depressa", "Chorou de alegria"],
+  correta: 2
+},
+{
+  pergunta: "Quem sugeriu que Daniel interpretasse a escrita na parede?",
+  opcoes: ["O próprio Belsazar", "O rei Dario", "A rainha", "Um soldado"],
+  correta: 2
+},
+{
+  pergunta: "Daniel interpretou que o reino de Belsazar seria dado a quem?",
+  opcoes: ["Os judeus", "Os egípcios", "Os persas e medos", "Os gregos"],
+  correta: 2
+},
+{
+  pergunta: "Quantas vezes ao dia Daniel orava?",
+  opcoes: ["1", "2", "3", "4"],
+  correta: 2
+},
+{
+  pergunta: "Em qual direção Daniel orava?",
+  opcoes: ["Para a Babilônia", "Para o templo em Jerusalém", "Para o palácio real", "Para o norte"],
+  correta: 1
+},
+{
+  pergunta: "Quem tramou contra Daniel no capítulo 6?",
+  opcoes: ["Os caldeus", "Outros presidentes e sátrapas", "Os hebreus", "Os magos"],
+  correta: 1
+},
+{
+  pergunta: "Qual rei foi enganado para assinar o decreto contra orações?",
+  opcoes: ["Nabucodonosor", "Dario", "Ciro", "Belsazar"],
+  correta: 1
+},
+{
+  pergunta: "O que o rei Dario fez logo ao amanhecer após Daniel ser jogado na cova?",
+  opcoes: ["Mandou jogar os acusadores", "Foi à cova e chamou por Daniel", "Fugiu", "Desistiu do trono"],
+  correta: 1
+},
+{
+  pergunta: "O que Daniel disse ao rei de dentro da cova?",
+  opcoes: ["\"Estou ferido\".", "\"Estou em paz\".", "\"Meu Deus enviou um anjo e fechou a boca dos leões\".", "\"Foi um erro\"."],
+  correta: 2
+},
+{
+  pergunta: "O que aconteceu com os acusadores de Daniel?",
+  opcoes: ["Foram presos", "Foram exilados", "Foram lançados na cova e mortos", "Nada"],
+  correta: 2
+},
+{
+  pergunta: "Que atitude o rei Dario teve após o livramento de Daniel?",
+  opcoes: ["Mandou prender os judeus", "Publicou um decreto exaltando o Deus de Daniel", "Repreendeu Daniel", "Mandou reconstruir Jerusalém"],
+  correta: 1
+},
+{
+  pergunta: "O que foi observado em Daniel que causou inveja nos outros líderes?",
+  opcoes: ["Sua beleza", "Seu espírito excelente", "Sua fortuna", "Seus sonhos"],
+  correta: 1
+},
+{
+  pergunta: "Quantas vezes Daniel foi promovido entre os capítulos 1 e 6?",
+  opcoes: ["1", "2", "3", "4"],
+  correta: 2
+},
+{
+  pergunta: "Qual era a punição prevista no decreto que proibia orar a qualquer deus ou homem?",
+  opcoes: ["Prisão", "Morte por fogo", "Ser lançado na cova dos leões", "Exílio"],
+  correta: 2
+},
+{
+  pergunta: "O que a expressão 'MENE' significa na interpretação de Daniel?",
+  opcoes: ["Dividido o teu reino", "Pesado na balança e achado em falta", "Contado foram os teus dias", "Julgado pelo o que fez"],
+  correta: 2
+},
+{
+  pergunta: "Quem reconheceu que Deus é quem revela mistérios?",
+  opcoes: ["Daniel", "Nabucodonosor", "Dario", "Belsazar"],
+  correta: 1
+},
+{
+  pergunta: "Daniel atribuiu seus dons a si mesmo?",
+  opcoes: ["Sim, ele era muito sábio", "Não, ele sempre deu crédito a Deus", "Sim, no início", "Nunca comentou"],
+  correta: 1
+},
+{
+  pergunta: "Qual atitude o rei esperava dos sábios quando teve o sonho da estátua?",
+  opcoes: ["Que dessem conselhos", "Que acalmassem o povo", "Que revelassem o sonho e sua interpretação", "Que dessem presentes"],
+  correta: 2
+},
+{
+  pergunta: "O que Daniel pediu a seus amigos após saber do sonho do rei?",
+  opcoes: ["Que fugissem", "Que jejuassem", "Que orassem a Deus", "Que se escondessem"],
+  correta: 2
+}
 ];
 
 let perguntasEmbaralhadas = [];
@@ -346,7 +346,30 @@ function ativarModoFoco() {
 
 function cancelarProva() {
   clearInterval(intervalo);
-  alert("Você saiu da tela! A prova foi cancelada.");
+
+  tempoFinal = Date.now();
+  const tempoGastoFormatado = "CANCELADA";
+  nomeUsuario = nomeUsuario || localStorage.getItem("nomeUsuario") || "Sem Nome";
+
+  const dados = {
+    Nome: nomeUsuario,
+    Acertos: 0,
+    TempoGasto: tempoGastoFormatado,
+    LinkPDF: "Prova cancelada"
+  };
+
+  fetch("https://api.sheetmonkey.io/form/3m1vGSyKv9idvhSJwAdzVp", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(dados)
+  }).finally(() => {
+    document.getElementById("modal-cancelamento").classList.remove("hidden");
+  });
+}
+
+function recarregarPagina() {
   location.reload();
 }
 
