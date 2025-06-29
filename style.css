@@ -32,7 +32,7 @@ img {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 button {
@@ -92,7 +92,6 @@ i {
   }
 }
 
-/* Estilos do overlay (fundo escuro) */
 #modal-alerta {
   position: fixed;
   top: 0;
@@ -144,6 +143,33 @@ i {
 
 #modal-alerta button:hover {
   background-color: #1d4ed8;
+}
+
+#modal-cancelamento {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+#modal-cancelamento div {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%;
+  font-family: Arial, sans-serif;
+}
+
+#modal-cancelamento h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.container-cancelar {
+  margin-top: 250px;
 }
 
 @media (max-width: 600px) {
