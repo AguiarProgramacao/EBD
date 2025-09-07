@@ -1,259 +1,256 @@
 const perguntas = [
   {
-    pergunta: "Quem foi levado cativo para a Babilônia no capítulo 1?",
-    opcoes: ["Daniel e seus amigos", "Ezequiel e Jeremias", "Nabucodonosor", "Zedequias"],
+    pergunta: "Quem foi a mãe de Jesus segundo Mateus capítulo 1?",
+    opcoes: ["Maria", "Elisabete", "Marta", "Ana"],
     correta: 0
   },
   {
-    pergunta: "O que Daniel recusou comer na corte da Babilônia?",
-    opcoes: ["Pão", "Frutas", "Carne e vinho do rei", "Peixe"],
-    correta: 2
-  },
-  {
-    pergunta: "Quantos dias durou o teste alimentar de Daniel e seus amigos?",
-    opcoes: ["3 dias", "7 dias", "10 dias", "21 dias"],
-    correta: 2
-  },
-  {
-    pergunta: "Quem deu novos nomes a Daniel e seus amigos?",
-    opcoes: ["O rei Davi", "O chefe dos oficiais", "Nabucodonosor", "Beltesazar"],
+    pergunta: "Quem recebeu em sonho a mensagem de não abandonar Maria?",
+    opcoes: ["Pedro", "José", "Tiago", "João Batista"],
     correta: 1
   },
   {
-    pergunta: "Qual era o novo nome de Daniel na Babilônia?",
-    opcoes: ["Misael", "Azarias", "Abede-Nego", "Beltesazar"],
+    pergunta: "De onde vieram os magos que visitaram Jesus?",
+    opcoes: ["Do Egito", "Do Oriente", "De Roma", "Da Galileia"],
+    correta: 1
+  },
+  {
+    pergunta: "Que presente os magos NÃO trouxeram?",
+    opcoes: ["Ouro", "Incenso", "Mirra", "Prata"],
     correta: 3
   },
   {
-    pergunta: "O que o rei Nabucodonosor exigiu dos sábios no capítulo 2?",
-    opcoes: ["Que fizessem um banquete", "Que interpretassem um sonho que ele não contou", "Que curassem sua doença", "Que escrevessem uma nova lei"],
-    correta: 1
-  },
-  {
-    pergunta: "Quem revelou o sonho de Nabucodonosor a Daniel?",
-    opcoes: ["Um anjo", "Gabriel", "Deus", "Arcanjo Miguel"],
+    pergunta: "Para onde José levou Jesus e Maria para fugir de Herodes?",
+    opcoes: ["Roma", "Nazaré", "Egito", "Belém"],
     correta: 2
   },
   {
-    pergunta: "Qual era a cabeça da estátua no sonho do rei?",
-    opcoes: ["Prata", "Bronze", "Ferro", "Ouro"],
+    pergunta: "Quem pregava: 'Arrependei-vos, porque é chegado o reino dos céus'?",
+    opcoes: ["Pedro", "João Batista", "Jesus", "Tiago"],
+    correta: 1
+  },
+  {
+    pergunta: "Como João Batista vestia-se?",
+    opcoes: ["Roupas de linho fino", "Peles de camelo e cinto de couro", "Túnica de seda", "Roupas sacerdotais"],
+    correta: 1
+  },
+  {
+    pergunta: "O que João Batista comia no deserto?",
+    opcoes: ["Pão e peixe", "Frutas e mel", "Gafanhotos e mel silvestre", "Carne e vinho"],
+    correta: 2
+  },
+  {
+    pergunta: "Quem batizou Jesus?",
+    opcoes: ["Pedro", "Tiago", "João Batista", "O anjo Gabriel"],
+    correta: 2
+  },
+  {
+    pergunta: "O que aconteceu após Jesus ser batizado?",
+    opcoes: ["Um anjo apareceu", "A pomba desceu e uma voz do céu falou", "O rio se abriu", "O sol escureceu"],
+    correta: 1
+  },
+  {
+    pergunta: "Quantos dias Jesus jejuou no deserto?",
+    opcoes: ["10", "20", "30", "40"],
     correta: 3
   },
   {
-    pergunta: "O que representava a pedra que destruiu a estátua?",
-    opcoes: ["A Babilônia", "O Império Romano", "O Reino de Deus", "Um rei perverso"],
-    correta: 2
-  },
-  {
-    pergunta: "O que Nabucodonosor fez após Daniel interpretar o sonho?",
-    opcoes: ["Mandou matá-lo", "O promoveu", "O expulsou da Babilônia", "Riu dele"],
+    pergunta: "Qual foi a primeira tentação de Satanás?",
+    opcoes: ["Adorar o diabo", "Transformar pedras em pães", "Atirar-se do pináculo do templo", "Reinar sobre o mundo"],
     correta: 1
   },
   {
-    pergunta: "Qual decreto o rei fez no capítulo 3?",
-    opcoes: ["Ninguém pode orar", "Todos devem adorar a estátua de ouro", "A Babilônia será destruída", "Daniel será morto"],
-    correta: 1
-  },
-  {
-    pergunta: "Quem foi lançado na fornalha de fogo?",
-    opcoes: ["Daniel", "Sadraque, Mesaque e Abede-Nego", "Ezequiel, Samuel e Obede-Edon", "Belsazar"],
-    correta: 1
-  },
-  {
-    pergunta: "Quantas pessoas foram vistas dentro da fornalha?",
-    opcoes: ["2", "3", "4", "5"],
-    correta: 2
-  },
-  {
-    pergunta: "Como os três jovens saíram da fornalha?",
-    opcoes: ["Queimados", "Mortos", "Com roupas chamuscadas", "Sem um fio de cabelo chamuscado"],
-    correta: 3
-  },
-  {
-    pergunta: "O que Nabucodonosor declarou após o milagre da fornalha?",
-    opcoes: ["Que mataria os judeus", "Que ninguém falasse mal do Deus vivo", "Que era um deus", "Que queimaria Daniel"],
-    correta: 1
-  },
-  {
-    pergunta: "No capítulo 4, qual foi o novo sonho de Nabucodonosor?",
-    opcoes: ["Uma árvore enorme que foi cortada", "Uma estátua caída", "Um leão rugindo", "Uma serpente voadora"],
+    pergunta: "Quem Jesus chamou primeiro para segui-lo?",
+    opcoes: ["Pedro e André", "Tiago e João", "Mateus e Bartolomeu", "Filipe e Natanael"],
     correta: 0
   },
   {
-    pergunta: "O que significava a árvore cortada no sonho?",
-    opcoes: ["A morte do rei", "A Babilônia seria invadida", "A humilhação e restauração do rei", "A queda de Israel"],
+    pergunta: "Qual foi o tema principal do Sermão do Monte?",
+    opcoes: ["A guerra contra Roma", "As bem-aventuranças e a justiça do Reino", "As leis judaicas", "As riquezas"],
+    correta: 1
+  },
+  {
+    pergunta: "Quem são chamados de 'bem-aventurados' porque verão a Deus?",
+    opcoes: ["Os pobres", "Os mansos", "Os limpos de coração", "Os que choram"],
     correta: 2
   },
   {
-    pergunta: "Por quanto tempo Nabucodonosor viveria como animal?",
-    opcoes: ["3 anos", "7 tempos", "1 tempo", "12 meses"],
+    pergunta: "Segundo Jesus, os discípulos são o quê para o mundo?",
+    opcoes: ["Luz e sal", "Guerreiros e profetas", "Juízes e reis", "Pastores e mestres"],
+    correta: 0
+  },
+  {
+    pergunta: "Jesus disse que não veio abolir a Lei, mas sim...",
+    opcoes: ["Ignorar", "Reformar", "Cumprir", "Abolir mesmo assim"],
+    correta: 2
+  },
+  {
+    pergunta: "O que Jesus ensinou sobre amar os inimigos?",
+    opcoes: ["Ignorá-los", "Orar por eles", "Vingar-se", "Condená-los"],
     correta: 1
   },
   {
-    pergunta: "O que Nabucodonosor reconheceu após ser restaurado?",
-    opcoes: ["Que ele era o maior rei", "Que o Deus de Daniel era soberano", "Que os magos eram poderosos", "Que devia morrer"],
+    pergunta: "Como Jesus ensinou que devemos dar esmolas?",
+    opcoes: ["Para sermos vistos", "Em secreto", "Na praça pública", "Com testemunhas"],
     correta: 1
   },
   {
-    pergunta: "Quem era Belsazar?",
-    opcoes: ["Filho de Daniel", "Rei da Pérsia", "Amigo de Daniel", "Sucessor de Nabucodonosor"],
+    pergunta: "Qual oração Jesus ensinou no capítulo 6?",
+    opcoes: ["Oração de Ana", "O Pai Nosso", "Salmo 23", "Cântico de Maria"],
+    correta: 1
+  },
+  {
+    pergunta: "O que Jesus ensinou sobre acumular tesouros?",
+    opcoes: ["Guardar muito ouro", "Investir em terras", "Não ajuntar tesouros na terra, mas no céu", "Repartir somente com os ricos"],
+    correta: 2
+  },
+  {
+    pergunta: "Ninguém pode servir a dois senhores, disse Jesus. Quais?",
+    opcoes: ["Deus e o diabo", "Deus e as riquezas (Mamom)", "Moisés e Elias", "Céu e terra"],
+    correta: 1
+  },
+  {
+    pergunta: "O que Jesus disse sobre a ansiedade em Mateus 6?",
+    opcoes: ["Não vos inquieteis pelo dia de amanhã", "Acumulai reservas", "Consultai os magos", "Trabalhai sem cessar"],
+    correta: 0
+  },
+  {
+    pergunta: "Por que Jesus é conhecido como filho de Davi?",
+    opcoes: ["Porque ele é filho de Davi", "Por causa da promessa messiânica", "Mateus não sabia de nada", "Porque Jesus é Jesus"],
+    correta: 1
+  },
+  {
+    pergunta: "Como é feita a contagem das gerações até Jesus?",
+    opcoes: ["10 em 10 Gerações", "12 em 12 Gerações", "14 em 14 Gerações", "16 em 16 Gerações"],
+    correta: 2
+  },
+  {
+    pergunta: "O que Herodes queria fazer com Jesus?",
+    opcoes: ["Adorá-lo", "Matá-lo", "Aprisioná-lo", "Dar Presentes"],
+    correta: 1
+  },
+  {
+    pergunta: "O que José pretendia fazer quando descobriu que Maria estava grávida?",
+    opcoes: ["Pretendia abraçá-la", "Pretendia dançar", "Pretendia matá-la", "Pretendia anular o casamento"],
     correta: 3
   },
   {
-    pergunta: "O que Belsazar usou em sua festa?",
-    opcoes: ["Taças sagradas do templo", "Cálices da Pérsia", "Taças de madeira", "Copos de ouro comum"],
-    correta: 0
-  },
-  {
-    pergunta: "O que apareceu na parede durante o banquete?",
-    opcoes: ["Uma espada flamejante", "Fumaça", "dedos de uma mão que escreveu uma mensagem", "Um anjo"],
-    correta: 2
-  },
-  {
-    pergunta: "Qual era a mensagem escrita na parede?",
-    opcoes: ["Paz, justiça, glória", "Deus venceu", "MENE, MENE, TEQUEL, PARSIM", "Viva o rei para sempre"],
-    correta: 2
-  },
-  {
-    pergunta: "Quem interpretou a escrita na parede?",
-    opcoes: ["Os magos", "Belsazar", "Daniel", "Um sacerdote"],
-    correta: 2
-  },
-  {
-    pergunta: "O que significava 'TEQUEL'?",
-    opcoes: ["Pesado na balança e achado em falta", "Dividido o teu reino", "Reinado encerrado", "Nação restaurada"],
-    correta: 0
-  },
-  {
-    pergunta: "O que aconteceu com Belsazar naquela noite?",
-    opcoes: ["Foi exilado", "Se converteu", "Foi morto", "Fugiu para o Egito"],
-    correta: 2
-  },
-  {
-    pergunta: "Quem assumiu o reino após Belsazar?",
-    opcoes: ["Dario, o medo", "Ciro", "Daniel", "Arioque"],
-    correta: 0
-  },
-  {
-    pergunta: "O que levou Daniel à cova dos leões?",
-    opcoes: ["Blasfêmia", "Roubo", "Orar a Deus apesar do decreto", "Se rebelar contra o rei"],
-    correta: 2
-  },
-  {
-    pergunta: "Por quantos dias o decreto dizia para não orar?",
-    opcoes: ["3 dias", "7 dias", "21 dias", "30 dias"],
-    correta: 3
-  },
-  {
-    pergunta: "O que o rei Dario fez após Daniel ser jogado na cova?",
-    opcoes: ["Fugiu", "Ficou em jejum", "Fez festa", "Matou os invejosos"],
+    pergunta: "Onde Jesus nasceu?",
+    opcoes: ["Belém do Pará", "Belém da Judéia", "Belém de Israel", "Belém de Nazaré"],
     correta: 1
   },
   {
-    pergunta: "Como Daniel saiu da cova?",
-    opcoes: ["Ferido", "Com medo", "Ileso, pois Deus fechou a boca dos leões", "Com ajuda do rei"],
+    pergunta: "Qual significado do incenso?",
+    opcoes: ["Divindade de Jesus", "Jesus seria cheiroso", "Realeza de Jesus", "Morte e Dor de Jesus"],
+    correta: 0
+  },
+  {
+    pergunta: "O que Herodes mandou fazer quando descobriu que foi enganado pelos magos?",
+    opcoes: ["Que achassem os magos", "Que matassem os magos", "Que matassem todas as crianças de 2 anos para baixo", "Que achassem a Jesus"],
     correta: 2
   },
   {
-  pergunta: "Como eram chamados os amigos de Daniel antes de receberem nomes babilônicos?",
-  opcoes: ["Hananias, Misael e Azarias", "Sadraque, Mesaque e Abede-Nego", "Eliezer, Natanael e Tobias", "Abel, Simeão e Levi"],
-  correta: 0
-},
-{
-  pergunta: "Qual foi a reação de Nabucodonosor ao ver quatro homens na fornalha?",
-  opcoes: ["Ficou furioso", "Adorou a imagem", "Assustou-se e levantou-se depressa", "Chorou de alegria"],
-  correta: 2
-},
-{
-  pergunta: "Quem sugeriu que Daniel interpretasse a escrita na parede?",
-  opcoes: ["O próprio Belsazar", "O rei Dario", "A rainha", "Um soldado"],
-  correta: 2
-},
-{
-  pergunta: "Daniel interpretou que o reino de Belsazar seria dado a quem?",
-  opcoes: ["Os judeus", "Os egípcios", "Os persas e medos", "Os gregos"],
-  correta: 2
-},
-{
-  pergunta: "Quantas vezes ao dia Daniel orava?",
-  opcoes: ["1", "2", "3", "4"],
-  correta: 2
-},
-{
-  pergunta: "Em qual direção Daniel orava?",
-  opcoes: ["Para a Babilônia", "Para o templo em Jerusalém", "Para o palácio real", "Para o norte"],
-  correta: 1
-},
-{
-  pergunta: "Quem tramou contra Daniel no capítulo 6?",
-  opcoes: ["Os caldeus", "Outros presidentes e sátrapas", "Os hebreus", "Os magos"],
-  correta: 1
-},
-{
-  pergunta: "Qual rei foi enganado para assinar o decreto contra orações?",
-  opcoes: ["Nabucodonosor", "Dario", "Ciro", "Belsazar"],
-  correta: 1
-},
-{
-  pergunta: "O que o rei Dario fez logo ao amanhecer após Daniel ser jogado na cova?",
-  opcoes: ["Mandou jogar os acusadores", "Foi à cova e chamou por Daniel", "Fugiu", "Desistiu do trono"],
-  correta: 1
-},
-{
-  pergunta: "O que Daniel disse ao rei de dentro da cova?",
-  opcoes: ["\"Estou ferido\".", "\"Estou em paz\".", "\"Meu Deus enviou um anjo e fechou a boca dos leões\".", "\"Foi um erro\"."],
-  correta: 2
-},
-{
-  pergunta: "O que aconteceu com os acusadores de Daniel?",
-  opcoes: ["Foram presos", "Foram exilados", "Foram lançados na cova e mortos", "Nada"],
-  correta: 2
-},
-{
-  pergunta: "Que atitude o rei Dario teve após o livramento de Daniel?",
-  opcoes: ["Mandou prender os judeus", "Publicou um decreto exaltando o Deus de Daniel", "Repreendeu Daniel", "Mandou reconstruir Jerusalém"],
-  correta: 1
-},
-{
-  pergunta: "O que foi observado em Daniel que causou inveja nos outros líderes?",
-  opcoes: ["Sua beleza", "Seu espírito excelente", "Sua fortuna", "Seus sonhos"],
-  correta: 1
-},
-{
-  pergunta: "Quantas vezes Daniel foi promovido entre os capítulos 1 e 6?",
-  opcoes: ["1", "2", "3", "4"],
-  correta: 2
-},
-{
-  pergunta: "Qual era a punição prevista no decreto que proibia orar a qualquer deus ou homem?",
-  opcoes: ["Prisão", "Morte por fogo", "Ser lançado na cova dos leões", "Exílio"],
-  correta: 2
-},
-{
-  pergunta: "O que a expressão 'MENE' significa na interpretação de Daniel?",
-  opcoes: ["Dividido o teu reino", "Pesado na balança e achado em falta", "Contado foram os teus dias", "Julgado pelo o que fez"],
-  correta: 2
-},
-{
-  pergunta: "Quem reconheceu que Deus é quem revela mistérios?",
-  opcoes: ["Daniel", "Nabucodonosor", "Dario", "Belsazar"],
-  correta: 1
-},
-{
-  pergunta: "Daniel atribuiu seus dons a si mesmo?",
-  opcoes: ["Sim, ele era muito sábio", "Não, ele sempre deu crédito a Deus", "Sim, no início", "Nunca comentou"],
-  correta: 1
-},
-{
-  pergunta: "Qual atitude o rei esperava dos sábios quando teve o sonho da estátua?",
-  opcoes: ["Que dessem conselhos", "Que acalmassem o povo", "Que revelassem o sonho e sua interpretação", "Que dessem presentes"],
-  correta: 2
-},
-{
-  pergunta: "O que Daniel pediu a seus amigos após saber do sonho do rei?",
-  opcoes: ["Que fugissem", "Que jejuassem", "Que orassem a Deus", "Que se escondessem"],
-  correta: 2
-}
+    pergunta: "Quando Herodes morreu, quem estava reinando em seu lugar?",
+    opcoes: ["Seu filho", "Seu neto", "Seu vizinho", "Seu Bisneto"],
+    correta: 0
+  },
+  {
+    pergunta: "Para qual cidade José foi depois que descobriu que Arquelau reinava na Judéia?",
+    opcoes: ["Egito", "Babilônia", "Israel", "Nazaré"],
+    correta: 3
+  },
+
+  // ---- Perguntas adicionais até chegar em 50 ----
+  {
+    pergunta: "Quem foi o pai de José, marido de Maria?",
+    opcoes: ["Jacó", "Abraão", "Isaque", "Davi"],
+    correta: 0
+  },
+  {
+    pergunta: "Qual sinal o anjo deu a José em sonho?",
+    opcoes: ["Que o filho seria chamado Emanuel", "Que Maria seria curada", "Que Jesus reinaria em Roma", "Que João seria o Messias"],
+    correta: 0
+  },
+  {
+    pergunta: "Que rei se perturbou ao ouvir sobre o nascimento de Jesus?",
+    opcoes: ["Herodes", "Faraó", "César Augusto", "Nero"],
+    correta: 0
+  },
+  {
+    pergunta: "Qual profissão José tinha?",
+    opcoes: ["Pastor", "Carpinteiro", "Sacerdote", "Médico"],
+    correta: 1
+  },
+  {
+    pergunta: "Qual foi a segunda tentação de Jesus?",
+    opcoes: ["Atirar-se do pináculo do templo", "Transformar pedras em pães", "Adorar o diabo", "Reinar em Roma"],
+    correta: 0
+  },
+  {
+    pergunta: "Quem deixou suas redes imediatamente para seguir Jesus?",
+    opcoes: ["Pedro e André", "Mateus e Judas", "Bartolomeu e Tomé", "Tiago e João"],
+    correta: 0
+  },
+  {
+    pergunta: "Jesus comparou os que praticam boas obras para serem vistos a quem?",
+    opcoes: ["Profetas", "Hipócritas", "Discípulos", "Sacerdotes"],
+    correta: 1
+  },
+  {
+    pergunta: "Qual é a recompensa dos que dão esmolas em secreto?",
+    opcoes: ["Ser vistos pelos homens", "O Pai que vê em secreto os recompensará", "Ser ricos", "Ser líderes"],
+    correta: 1
+  },
+  {
+    pergunta: "No Pai Nosso, o que pedimos sobre o pão?",
+    opcoes: ["Pão nosso de cada dia nos dá hoje", "Pão de ouro", "Pão eterno", "Pão do sábado"],
+    correta: 0
+  },
+  {
+    pergunta: "O que Jesus disse sobre o olho?",
+    opcoes: ["É a luz do corpo", "É enganoso", "É inútil", "Não serve para nada"],
+    correta: 0
+  },
+  {
+    pergunta: "Que exemplo de confiança em Deus Jesus deu em Mateus 6?",
+    opcoes: ["Os lírios do campo", "Os montes", "O mar da Galileia", "Os anjos"],
+    correta: 0
+  },
+  {
+    pergunta: "Quem não entrará no Reino dos céus segundo Mateus 5:20?",
+    opcoes: ["Quem não exceder a justiça dos escribas e fariseus", "Os pobres", "As crianças", "Os estrangeiros"],
+    correta: 0
+  },
+  {
+    pergunta: "O que Jesus disse sobre juramentos?",
+    opcoes: ["Não jurar de maneira alguma", "Jurar somente em Jerusalém", "Jurar somente no sábado", "Jurar em nome dos profetas"],
+    correta: 0
+  },
+  {
+    pergunta: "O que devemos fazer quando oramos, segundo Jesus?",
+    opcoes: ["Entrar no quarto e orar em secreto", "Gritar na praça", "Orar diante dos reis", "Acender uma vela"],
+    correta: 0
+  },
+  {
+    pergunta: "Qual é a recompensa dos limpos de coração?",
+    opcoes: ["Serão saciados", "Verão a Deus", "Possuirão a terra", "Serão chamados filhos de Deus"],
+    correta: 1
+  },
+  {
+    pergunta: "Quem herdará a terra?",
+    opcoes: ["Os ricos", "Os mansos", "Os guerreiros", "Os reis"],
+    correta: 1
+  },
+  {
+    pergunta: "O que Jesus disse sobre perseguirem os discípulos?",
+    opcoes: ["Regozijai-vos, porque grande é o vosso galardão nos céus", "Fujam sempre", "Resistam com armas", "Abandonem a fé"],
+    correta: 0
+  },
+  {
+    pergunta: "O que acontece se o sal perder o sabor?",
+    opcoes: ["Nada", "Para nada mais presta senão para ser lançado fora", "Fica doce", "Vira ouro"],
+    correta: 1
+  }
 ];
 
 let perguntasEmbaralhadas = [];
@@ -278,7 +275,7 @@ function iniciarQuestionario() {
   tempoInicial = Date.now();
   document.getElementById("aviso").classList.add("hidden");
   document.getElementById("quiz").classList.remove("hidden");
-  perguntasEmbaralhadas = perguntas.sort(() => 0.5 - Math.random());
+  perguntasEmbaralhadas = [...perguntas];
   mostrarPergunta();
   iniciarTimer();
   ativarModoFoco();
@@ -482,7 +479,17 @@ function gerarPDF(usuario, respostas, callback) {
   };
 
   html2pdf().from(div).set(opt).outputPdf('blob').then(blob => {
-    const url = URL.createObjectURL(blob);
-    callback(url);
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+    if (isIOS) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        callback(e.target.result);
+      };
+      reader.readAsDataURL(blob);
+    } else {
+      const url = URL.createObjectURL(blob);
+      callback(url);
+    }
   });
 }
