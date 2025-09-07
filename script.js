@@ -432,20 +432,30 @@ function enviarParaPlanilha(tempoGastoFormatado) {
 
     fetch("https://api.sheetmonkey.io/form/3m1vGSyKv9idvhSJwAdzVp", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dados)
     });
 
-    // Mostrar o link do PDF na tela
     const linkDiv = document.getElementById("link-pdf");
-    linkDiv.innerHTML = `
-      <p><strong>Download do PDF com suas respostas:</strong></p>
-      <a href="${pdfURL}" target="_blank" style="color: blue; text-decoration: underline;">
-        Clique aqui para baixar o PDF
-      </a>
-    `;
+    linkDiv.innerHTML = `<p><strong>Download do PDF com suas respostas:</strong></p>`;
+
+    const a = document.createElement("a");
+    a.style.color = "blue";
+    a.style.textDecoration = "underline";
+
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+    if (isIOS) {
+      a.href = pdfURL;           // pdfURL já é dataURL
+      a.target = "_blank";       // abrir em nova aba
+      a.innerText = "Clique aqui para abrir o PDF no iOS";
+    } else {
+      a.href = pdfURL;           // pdfURL é objectURL normal
+      a.download = `${nomeUsuario}-respostas.pdf`;
+      a.innerText = "Clique aqui para baixar o PDF";
+    }
+
+    linkDiv.appendChild(a);
     linkDiv.classList.remove("hidden");
   });
 }
