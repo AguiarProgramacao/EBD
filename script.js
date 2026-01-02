@@ -31,7 +31,7 @@ function iniciarQuestionario() {
   tempoInicial = Date.now();
   document.getElementById("aviso").classList.add("hidden");
   document.getElementById("quiz").classList.remove("hidden");
-  perguntasEmbaralhadas = perguntas.sort(() => 0.5 - Math.random());
+  perguntasEmbaralhadas = [...perguntas];
   mostrarPergunta();
   iniciarTimer();
   ativarModoFoco();
@@ -99,7 +99,30 @@ function ativarModoFoco() {
 
 function cancelarProva() {
   clearInterval(intervalo);
-  alert("Você saiu da tela! A prova foi cancelada.");
+
+  tempoFinal = Date.now();
+  const tempoGastoFormatado = "CANCELADA";
+  nomeUsuario = nomeUsuario || localStorage.getItem("nomeUsuario") || "Sem Nome";
+
+  const dados = {
+    Nome: nomeUsuario,
+    Acertos: 0,
+    TempoGasto: tempoGastoFormatado,
+    LinkPDF: "Prova cancelada"
+  };
+
+  fetch("https://api.sheetmonkey.io/form/3m1vGSyKv9idvhSJwAdzVp", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(dados)
+  }).finally(() => {
+    document.getElementById("modal-cancelamento").classList.remove("hidden");
+  });
+}
+
+function recarregarPagina() {
   location.reload();
 }
 
@@ -165,19 +188,30 @@ function enviarParaPlanilha(tempoGastoFormatado) {
 
     fetch("https://api.sheetmonkey.io/form/3m1vGSyKv9idvhSJwAdzVp", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dados)
     });
 
     const linkDiv = document.getElementById("link-pdf");
-    linkDiv.innerHTML = `
-      <p><strong>Download do PDF com suas respostas:</strong></p>
-      <a href="${pdfURL}" target="_blank" style="color: blue; text-decoration: underline;">
-        Clique aqui para baixar o PDF
-      </a>
-    `;
+    linkDiv.innerHTML = `<p><strong>Download do PDF com suas respostas:</strong></p>`;
+
+    const a = document.createElement("a");
+    a.style.color = "blue";
+    a.style.textDecoration = "underline";
+
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+    if (isIOS) {
+      a.href = pdfURL;           // pdfURL já é dataURL
+      a.target = "_blank";       // abrir em nova aba
+      a.innerText = "Clique aqui para abrir o PDF no iOS";
+    } else {
+      a.href = pdfURL;           // pdfURL é objectURL normal
+      a.download = `${nomeUsuario}-respostas.pdf`;
+      a.innerText = "Clique aqui para baixar o PDF";
+    }
+
+    linkDiv.appendChild(a);
     linkDiv.classList.remove("hidden");
   });
 }
@@ -211,7 +245,17 @@ function gerarPDF(usuario, respostas, callback) {
   };
 
   html2pdf().from(div).set(opt).outputPdf('blob').then(blob => {
-    const url = URL.createObjectURL(blob);
-    callback(url);
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+    if (isIOS) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        callback(e.target.result);
+      };
+      reader.readAsDataURL(blob);
+    } else {
+      const url = URL.createObjectURL(blob);
+      callback(url);
+    }
   });
 }

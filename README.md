@@ -14,10 +14,6 @@ Este projeto é um sistema de **questionário online com timer regressivo, modo 
 - 📌 Modal de alerta personalizado (sem usar `alert()`, evitando quebra do foco)
 - 📃 Armazena: nome, tempo, número de acertos e respostas (certa e marcada)
 
-## 🖼️ Captura de Tela
-
-<img src="./screenshot.png" alt="Tela do quiz" width="600"/>
-
 ## 📁 Estrutura do Projeto
 
 .
