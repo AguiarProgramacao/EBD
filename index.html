@@ -23,21 +23,21 @@
       <label>Digite seu nome:</label>
       <input type="text" id="nome" />
       <br /><br />
-      <button onclick="mostrarAviso()">Começar</button>
+      <button id="buttonAviso">Começar</button>
     </div>
 
     <div id="aviso" class="hidden">
       <i class="fa-solid fa-triangle-exclamation"></i>
       <p>Ao iniciar o questionário, você entrará em modo de foco (tela cheia). Se sair da tela, a prova será cancelada.
       </p>
-      <button onclick="ativarModoFoco(); iniciarQuestionario();">Iniciar Prova</button>
+      <button id="iniciarQuest">Iniciar Prova</button>
     </div>
 
     <div id="quiz" class="hidden">
       <div id="timer">Tempo restante: 60:00</div>
       <div id="pergunta-container"></div>
-      <button onclick="responder()">Responder</button>
-      <button onclick="lerPergunta()">🔊 Ouvir</button>
+      <button id="responder">Responder</button>
+      <button id="ler">🔊 Ouvir</button>
     </div>
 
     <div id="resultado" class="hidden">
@@ -48,11 +48,12 @@
   <div id="modal-alerta" class="hidden">
     <div class="bg-white rounded-lg shadow-lg p-6 max-w-md text-center">
       <p id="modal-alerta-texto" class="mb-4 text-lg font-medium text-gray-800">Mensagem aqui</p>
-      <button onclick="fecharModalAlerta()"
-        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">OK</button>
+      <button id="fecharModal" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        OK
+      </button>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
